@@ -53,3 +53,49 @@ Rule 2 :-
 1. Drop any constant numbers
 
 t= O(n)
+
+
+1st Example :- To get the square of n numbers
+
+def get_square(l:list)->list:
+
+	square_numbers=[]
+
+	for number in l:
+
+		number=number**2
+
+		square_numbers.append(number)
+
+	return square_numbers
+
+
+In this program the loop runs for all the input numbers give in the list l
+here the time complexity of the code is linear so the time complexity will be O(n)
+
+
+2nd Example → Finding the duplicate from two list
+
+def find_duplicate(l:list)→int:
+	for i in range(len(l)):
+		for j in range(len(l)):
+			if l[i]==l[j]:
+				print(l[i])
+	break
+
+in this the time complexity will be of O(n2) n square
+
+
+if there are two or more loops the runtime complexity will O(n2)
+
+if the input is the only one then the time complexity is O(1)
+
+______________________________________________________________________________________________________________________
+
+
+
+Space Complexity:-
+
+
+
+	
