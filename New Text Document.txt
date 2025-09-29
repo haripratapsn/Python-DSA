@@ -27,5 +27,29 @@ for example if the size of an array is 100 and it take's 0.2 milliseconds to run
 	and the if the size of a array is 1000 and it take's 2.2 milliseconds to run
 
 
+the time taken to run this program is linearly proportional to the size of the array. so we can represent any linear representation as time=a*n + b.
+
+the reason we don't use the time=a*n + b formula for the mathematical representation of because the time taken will differ as per the computer so it will not be constant result for the same program in different computer so we use some rules to represent it as a mathematical representation.
+
+t = a*n + b
+
+n → size of the input
+
+a → Constant cost per input element (work done for each item).
+
+b → Constant overhead (setup work that doesn’t depend on n)
 
 
+t=a*n + b
+
+Rule 1 :-
+
+1. We only keep the fastest growing term
+
+t=a*n
+
+Rule 2 :-
+
+1. Drop any constant numbers
+
+t= O(n)
