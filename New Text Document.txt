@@ -1,0 +1,31 @@
+Data Structure in Python'
+
+Data Structure the structure of the data in which it is stored and accessed efficiently.
+
+A data structure is a built-in or user-defined way of organizing and storing data in Python so it can be accessed, updated, and processed efficiently. 
+
+Implementation of Data Structure in Python 
+
+Array -> List
+
+Hash Table -> Dictionary
+
+Linked List -> Not Available
+
+
+______________________________________________________________________________________________________________________
+
+Big O Notation is used to measure the space required by the program grow as input size increases.
+
+Running Time :
+
+The time taken to process the input and give output is running time.
+
+Running time is the total time an algorithm takes to complete all of its operations, expressed as a function of the input size n.
+
+for example if the size of an array is 100 and it take's 0.2 milliseconds to run
+	and the if the size of a array is 1000 and it take's 2.2 milliseconds to run
+
+
+
+
