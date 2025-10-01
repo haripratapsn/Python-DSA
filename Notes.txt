@@ -1,0 +1,158 @@
+
+
+Data Structure the structure of the data in which it is stored and accessed efficiently .
+
+A data structure is a built-in or user-defined way of **organizing and storing data in Python so it can be accessed, updated, and processed efficiently.
+
+Implementation  of Data Structure in different Languages :
+
+______________________________________________________________________________________________________________________________________
+
+Big O notation:
+
+is used to measure how running time or space requirement for your program grow as input size grows.
+______________________________________________________________________________________________________________________________________
+
+Running Time: Time  Complexity
+
+The time taken to process the input and give an output in a computer is running time.
+
+Running time
+
+is the total time an algorithm takes to complete all of its operations, expressed as a function of the
+
+input size n .
+
+For example size(arr) → 100 →  0.2 millisecond
+
+                       size(arr) → 1000 → 2.30 millisecond
+
+so now if we represent this in a graph it will be a linear representation 
+
+for example if the size of an array is 100 and it take's 0.2 milliseconds to run
+and the if the size of a array is 1000 and it take's 2.2 milliseconds to run
+
+The time taken to run this program is linearly proportional to the size of the array. so we can represent any linear representation as time=a*n + b.
+the reason we don't use the time=a*n + b  formula for the mathematical representation of because the time taken will differ as per the computer so it will not be constant result for the same program in different computer so we use some rules to represent it as a mathematical representation.
+
+n → size of the input
+
+a → Constant cost per input element (work done for each item).
+
+b → Constant overhead (setup work that doesn’t depend on n)
+
+t=a*n + b
+
+## Rule 1 →
+
+1. We only keep the fastest growing term
+
+t=a*n
+
+## Rule 2 →
+
+1. Drop any constant numbers
+
+t= O(n)
+
+Example 1 →To get the square of n numbers
+
+```python
+def get_square(l: list) -> list:
+    square_numbers = []
+    for number in l:
+        number = number ** 2
+        square_numbers.append(number)
+    return square_numbers
+```
+
+In this program the loop runs for all the input numbers give in the list **l**
+
+here the time complexity of the code is linear so the time complexity will be **O(n)**
+
+## Example 2 → Finding the duplicate from two list
+
+```python
+def find_duplicate(l:list)→int:
+	for i in range(len(l)):
+		for j in range(len(l)):
+			if l[i]==l[j]:
+				print(l[i])
+				break
+```
+
+in this the time complexity will be of O(n2) n square
+
+## Example 3 → Of there is three for loop:
+
+for this program the time complexity is O(n2)
+
+## Example 4 → To Find the value for a index
+
+here the program runes only for the number of index times which is one index per run time so the time complexity of this program is O(1) where n=1 .
+
+
+# Space Complexity →
+______________________________________________________________________________________________________________________________________
+
+
+**Space Complexity** is the measure of the total amount of memory (or storage space) that an algorithm requires to run to completion.
+
+for example to search a number in a list and to check whether it is present or not it will search the whole list which means n number in the list it will search n times , so if we take binary search algorithm first it will check the number is greater or less Dhan the middle value of the list then split the list into two parts and search for the number it will take less space for searching a value.
+
+## Arrays
+
+Arrays are the most common data structure used in all the languages
+
+### Example 1:
+
+To store the apple stock price and to check
+
+1. What was the price on the day 1?
+2. What was the price on the day 3?
+
+stock_price=[10,20,30,40]
+
+Ans1- stock_price[0]
+
+Ans2- stock_price[2]
+
+in memory(RAM) the values of the array are stored like
+
+In the RAM or memory the value's are stored with the addresses assigned to them and it points to the variable.
+
+So each value space first the value is converted into binary number,
+For an Integer number 4 bytes are used to store in many programming languages.
+
+so each byte is stored differently with a address
+
+
+Scenario 1 - What is the stock price on day 3?:-
+
+When the stock_price[2] is called
+then internally first it will check the address stored in the variable
+then it will point to the first element address in the array
+then it will add the index provide which is in this case "2" to the address
+then it will multiply by the sizeof(integer) which is "4" to the address
+then in return it returns the value in the index 2
+
+Time Complexity is
+the order of lookup is O(1) constant time
+
+Scenario 2 - When was the stock price 301? :-
+
+Time Complexity is
+the order of lookup is O(n) because it traverses through all the elements in the array
+
+Scenario 3 - Print all the prices :-
+
+Time Complexity is
+the order of lookup is O(n) because it traverses through all the elements in the array
+
+Scenario 4 - Insert new price 284 at index 1 :-
+
+Time Complexity if we use list_var.insert( index , value) then
+the order of lookup is O(n) because
+
+
+
