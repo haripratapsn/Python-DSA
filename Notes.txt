@@ -149,10 +149,13 @@ Scenario 3 - Print all the prices :-
 Time Complexity is
 the order of lookup is O(n) because it traverses through all the elements in the array
 
-Scenario 4 - Insert new price 284 at index 1 :-
+### Scenario 4 - Insert new price 284 at index 1 :-
 
 Time Complexity if we use list_var.insert( index , value) then
 the order of lookup is O(n) because
 
+first it will traverse until the index given
+
+then it will shift all the below values to the next index
 
 
