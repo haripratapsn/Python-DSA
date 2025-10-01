@@ -92,9 +92,54 @@ if the input is the only one then the time complexity is O(1)
 
 ______________________________________________________________________________________________________________________
 
-
-
 Space Complexity:-
+
+Space Complexity is the measurement of the total amount of memory (or storage space) that an algorithm requires to run to completion.
+
+for example to search a number in a list and to check whether it is present or not it will search the whole list which means n number in the list it will search n times , so if we take binary search algorithm first it will check the number is greater or less Dhan the middle value of the list then split the list into two parts and search for the number it will take less space for searching a value.
+
+here in binary search the worst case scenario is that it will take O(logn) times iteration.
+
+
+
+_____________________________________________________________________________________________________________________
+
+Arrays
+
+Arrays are most commonly used data structure in an programming language
+
+Example :- 
+To store apple stock price for 5 days and answer,
+
+1. What was the price on day1 ?
+2. What was the price on day3 ?
+
+
+stock_price=[30,50,30,123,12312,123123123]
+stock_price[0]
+stock_price[2]
+
+In the RAM or memory the value's are stored with the addresses assigned to them and it points to the variable
+
+So each value space first the value is converted into binary number 
+For an Integer number 4 bytes are used to store in many programming languages
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
