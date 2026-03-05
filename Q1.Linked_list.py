@@ -63,6 +63,26 @@ class LinkedList():
             itr = itr.next
             count += 1
 
+
+    def insert_at(self,index,data):
+        if index<0 or index>self.get_length():
+            raise Exception("Invalid Index Error")
+        if index==0:
+            self.insert_at_begining(data)
+            return
+
+        count=0
+        itr=self.head
+        while itr:
+            if count==index -1:
+                node = Node(data,itr.next)
+                itr.next =node 
+                break
+
+            itr=itr.next
+            count+=1
+
+         
     # Print linked list
     def print(self):
         if self.head is None:
@@ -90,10 +110,14 @@ ll.insert_at_end(19887)
 
 ll.print()
 
-ll.insert_values(["apple", "orange", "mango"])
+ll.insert_values(["apple", "orange", "mango","damiasd"])
 
 ll.print()
 
 ll.remove_at(2)
+
+ll.print()
+
+ll.insert_at(3,"Figgs")
 
 ll.print()
